@@ -219,6 +219,12 @@
                     justify-content: flex-start;
                 }
             }
+            
+            .item__link__active {
+                text-decoration: none;
+                border-bottom: 2px solid #F1CDB3;
+                padding-bottom: 4px;
+            }
             /*main*/
             
             .main {

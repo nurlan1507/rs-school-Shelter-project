@@ -352,15 +352,17 @@ $georgia: 'Georgia';
     background-color: transparent;
     cursor: pointer;
 }
-.button__double__forward{
-    color:black;
-    border-color: rgba(241, 205, 179, 1);
 
+.button__double__forward {
+    color: black;
+    border-color: rgba(241, 205, 179, 1);
 }
-.button__single__forward{
-    color:black;
-border-color: rgba(241, 205, 179, 1)
+
+.button__single__forward {
+    color: black;
+    border-color: rgba(241, 205, 179, 1)
 }
+
 .active {
     border: 1px solid #F1CDB3;
     color: black;
@@ -477,7 +479,7 @@ border-color: rgba(241, 205, 179, 1)
 .footer {
     width: 100%;
     height: fit-content;
-    background-image: url('../../assets/img/footer-gradient-background.png');
+    background-image: url('/assets/img/footer-gradient-background.png');
     background-size: cover;
 }
 
@@ -653,9 +655,11 @@ border-color: rgba(241, 205, 179, 1)
 
 
 /*POPUP*/
-.pet__popup.active{
+
+.pet__popup.active {
     display: flex;
 }
+
 .pet__popup {
     display: none;
     width: 100%;

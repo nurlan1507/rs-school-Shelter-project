@@ -44,7 +44,7 @@
                 <a class="item__link item__link__m" href="ourpets.html">Our pets</a>
             </li>
             <li class="navbar__item navbar__item__popup">
-                <a class="item__link item__link__m" href="">Help the shelter</a>
+                <a class="item__link item__link__m" href="#help">Help the shelter</a>
             </li>
             <li class="navbar__item navbar__item__popup">
                 <a class="item__link item__link__m" href="#">Contacts</a>
@@ -72,10 +72,10 @@
                         <a class="item__link item__link__d item__link__active" href="#">Our pets</a>
                     </li>
                     <li class="navbar__item">
-                        <a class="item__link item__link__d" href="#">Help the shelter</a>
+                        <a class="item__link item__link__d" href="index.html#help">Help the shelter</a>
                     </li>
                     <li class="navbar__item">
-                        <a class="item__link item__link__d" href="#">Contacts</a>
+                        <a class="item__link item__link__d" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </div>
@@ -92,25 +92,25 @@
             <div class="catalog__buttons__set">
                 <a class="catalog__btn button__double__back"></a>
                 <a class="catalog__btn button__single__back"></a>
-                <a class="catalog__btn current__page">1</a>
+                <a class="catalog__btn current__page" style="cursor: pointer;">1</a>
                 <a class="catalog__btn button__single__forward">></a>
                 <a class="catalog__btn button__double__forward">>></a>
             </div>
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="wrapper">
             <div class="footer__container">
                 <div class="footer__contacts">
                     <h3 classs="contacts__title">For questions and suggestions</h3>
                     <div class="contacts__el contacts__email">
                         <img src="assets/img/icon-email.svg">
-                        <div class="contacs__email__info">email@shelter.com</div>
+                        <div class="contacs__email__info"><a href="mailto:email@shelter.com" style="color:#F1CDB3">email@shelter.com</a></div>
                     </div>
                     <div class="contacts__el contacts__phone">
                         <img src="assets/img/icon-phone.svg">
-                        <div class="contacs__phone__info">+13 674 567 75 54</div>
+                        <div class="contacs__phone__info"><a href="tel:+13 674 567 75 54" style="color:#F1CDB3">+13 674 567 75 54</a></div>
                     </div>
                 </div>
                 <div class="footer__location">
@@ -130,7 +130,6 @@
             </div>
         </div>
     </footer>
-
     <script src="launch.js"></script>
     <script src="data.js"></script>
     <script src="main_page/scripts.js"></script>

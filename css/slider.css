@@ -61,6 +61,7 @@
 }
 
 .card {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,9 +76,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
   -webkit-animation: append-animate 0.7s linear;
           animation: append-animate 0.7s linear;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0, 0, 0, 0.2;
+          box-shadow: 0, 0, 0, 0.2;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: #FFFFFF;
+}
+.card:hover .card__btn__content {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: #F1CDB3;
+  color: black;
 }
 
 .petname {
@@ -190,6 +204,7 @@
 }
 
 .slider__btn {
+  cursor: pointer;
   max-width: 52px;
   max-height: 52px;
   min-width: 52px;
@@ -205,6 +220,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.slider__btn:hover {
+  background-color: #F1CDB3;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .more__btn__container {

@@ -1,9 +1,10 @@
 .body {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 1280px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  margin: 0 auto;
 }
 
 .body.ban {
@@ -138,6 +139,13 @@ ul {
   margin: 0;
 }
 
+.button__single__forward:hover,
+.button__double__forward:hover {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  background-color: #F1CDB3;
+}
+
 .logo__under {
   padding-top: 10px;
   font-size: 13px;
@@ -266,8 +274,11 @@ ul {
 .card:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.card:hover .card__btn__content {
+  background-color: #F1CDB3;
 }
 
 .card:not(:hover) {
@@ -391,15 +402,16 @@ ul {
   color: #CDCDCD;
   line-height: 23px;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .button__double__forward {
+  cursor: pointer;
   color: black;
   border-color: #f1cdb3;
 }
 
 .button__single__forward {
+  cursor: pointer;
   color: black;
   border-color: #f1cdb3;
 }
@@ -634,6 +646,8 @@ ul {
 }
 
 .footer__container {
+  width: 80%;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;

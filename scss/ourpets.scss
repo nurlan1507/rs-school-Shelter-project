@@ -3,8 +3,9 @@ $phone:419px;
 .body {
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 1280px;
     box-sizing: content-box;
+    margin: 0 auto;
 }
 
 .body.ban {
@@ -178,6 +179,12 @@ $georgia: 'Georgia';
 
 .logo {}
 
+.button__single__forward:hover,
+.button__double__forward:hover {
+    transition: all .4s ease-in;
+    background-color: #F1CDB3;
+}
+
 .logo__under {
     padding-top: 10px;
     font-size: 13px;
@@ -264,7 +271,10 @@ $georgia: 'Georgia';
 
 .card:hover {
     transition: all 0.5s ease-in-out;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    .card__btn__content {
+        background-color: #F1CDB3;
+    }
 }
 
 .card:not(:hover) {
@@ -350,15 +360,16 @@ $georgia: 'Georgia';
     color: #CDCDCD;
     line-height: 23px;
     background-color: transparent;
-    cursor: pointer;
 }
 
 .button__double__forward {
+    cursor: pointer;
     color: black;
     border-color: rgba(241, 205, 179, 1);
 }
 
 .button__single__forward {
+    cursor: pointer;
     color: black;
     border-color: rgba(241, 205, 179, 1)
 }
@@ -489,6 +500,8 @@ $georgia: 'Georgia';
 }
 
 .footer__container {
+    width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }

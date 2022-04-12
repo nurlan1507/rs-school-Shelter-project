@@ -234,7 +234,7 @@ ul {
   display: grid;
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
-  padding-top: 50px;
+  padding-top: 61px;
 }
 
 .main__dog {

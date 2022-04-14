@@ -15,13 +15,13 @@ let end;
 let current__page = document.querySelector('.current__page')
 const width1280 = window.matchMedia('(min-width: 1247px)');
 let cardArr = [];
-let cardBtnArr=[]
+let cardBtnArr = []
 console.log('launch')
 
 
 function definePoints(petsonpage) {
     if (localStorage.getItem('current') === null) {
-        localStorage.setItem('current',pageNum);
+        localStorage.setItem('current', pageNum);
     } else {
         pageNum = localStorage.getItem('current');
     }
@@ -35,7 +35,7 @@ function assignPopup(cardArrBtn) {
         item.onclick = () => {
             console.log("loggin")
             let target = event.target;
-            if(target.className !== 'card__btn__content'){
+            if (event.target.className !== 'card__btn__content') {
                 return
             }
             console.log(database.indexOf(target))
@@ -52,7 +52,7 @@ function assignPopup(cardArrBtn) {
 
 
 
-function  appendCards() {
+function appendCards() {
     cardArr = [];
     for (let i = start; i < end; i++) {
         let card = document.createElement('div');
@@ -87,7 +87,7 @@ btnForward.addEventListener('click', () => {
     start = (parseInt(pageNum) - 1) * petsOnPage;
     end = parseInt(start) + petsOnPage
     if (database.slice(start, end).length != 0) {
-        cardBtnArr.splice(0,cardBtnArr.length)
+        cardBtnArr.splice(0, cardBtnArr.length)
         if (database.slice(start, end).length < petsOnPage) {
             localStorage.setItem('maxPageValue', localStorage.getItem('current'));
         }
@@ -103,7 +103,7 @@ btnForward.addEventListener('click', () => {
 
 btnBack.addEventListener('click', () => {
     if (parseInt(current__page.innerHTML) > 1) {
-        cardBtnArr.splice(0,cardBtnArr.length)
+        cardBtnArr.splice(0, cardBtnArr.length)
         pageNum = current__page.innerHTML;
         pageNum = parseInt(pageNum) - 1;
         start = (parseInt(pageNum) - 1) * petsOnPage;
@@ -127,8 +127,8 @@ function showFirst(petsOnPage) {
     cardArr.forEach(item => {
         item.style.display = "none";
     })
-    cardBtnArr.splice(0,cardBtnArr.length)
-    cardArr.splice(0,cardArr.length)
+    cardBtnArr.splice(0, cardBtnArr.length)
+    cardArr.splice(0, cardArr.length)
     definePoints(petsOnPage);
     appendCards();
 }

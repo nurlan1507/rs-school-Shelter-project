@@ -70,6 +70,7 @@
 .card {
     cursor: pointer;
     display: flex;
+    background: gray;
     flex-direction: column;
     width: 270px;
     height: fit-content;
@@ -78,9 +79,8 @@
 }
 
 .card:hover {
-    box-shadow: (0, 0, 0, 0.2);
     transition: all 0.2s linear;
-    background-color: #FFFFFF;
+    background-color: white;
     .card__btn__content {
         transition: all 0.2s linear;
         background-color: #F1CDB3;
@@ -174,8 +174,20 @@
     align-items: center;
 }
 
+.slider__btn__forw {
+    transform: rotate(180deg)
+}
+
+.slider__btn__forw:hover {
+    transition: all 0.4s linear;
+    transform: rotate(360deg)
+}
+
 .slider__btn:hover {
     background-color: #F1CDB3;
+    img {
+        transform: rotate(360deg);
+    }
     transition: all 0.5s linear;
 }
 

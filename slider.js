@@ -65,6 +65,7 @@ function appendCards2() {
         card.appendChild(cardBtn);
         card.append(cardBtncontent);
         sliderCardArr.push(card)
+        card.style.background = "#FAFAFA";
     }
     slider__line.appendChild(slider__line__item);
 }

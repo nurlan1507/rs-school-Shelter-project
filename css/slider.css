@@ -65,6 +65,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: gray;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -81,11 +82,9 @@
 }
 
 .card:hover {
-  -webkit-box-shadow: 0, 0, 0, 0.2;
-          box-shadow: 0, 0, 0, 0.2;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  background-color: #FFFFFF;
+  background-color: white;
 }
 .card:hover .card__btn__content {
   -webkit-transition: all 0.2s linear;
@@ -222,10 +221,26 @@
           align-items: center;
 }
 
+.slider__btn__forw {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slider__btn__forw:hover {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .slider__btn:hover {
   background-color: #F1CDB3;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
+}
+.slider__btn:hover img {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .more__btn__container {
